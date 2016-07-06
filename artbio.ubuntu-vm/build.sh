@@ -8,4 +8,4 @@ cp ubuntu-14.04-amd64.img new.qcow2
 qemu-img resize new.qcow2 +5GB
 sudo virt-resize --expand /dev/vda1 ubuntu-14.04-amd64.img new.qcow2
 # now we've got a resized partition, so we can build a new docker image
-docker build -t artbio/vm-ubuntu .
+docker build -t artbio/ubuntu-vm .
