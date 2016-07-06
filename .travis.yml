@@ -1,0 +1,16 @@
+language: python
+python: "2.7"
+sudo: required
+dist: trusty
+
+before_install:
+  - bash ./prepare_build.sh
+
+install:
+  - bash ./build.sh
+
+deploy:
+  provider: script
+  script: bash ./deploy.sh
+  on:
+    branch: master
