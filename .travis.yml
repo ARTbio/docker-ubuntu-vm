@@ -4,13 +4,13 @@ sudo: required
 dist: trusty
 
 before_install:
-  - bash ./prepare_build.sh
+  - bash ./artbio.ubuntu-vm/prepare_build.sh
 
 install:
-  - bash ./build.sh
+  - bash ./artbio.ubuntu-vm/build.sh
 
 script:
-  - bash ./test.sh 
+  - bash ./artbio.ubuntu-vm/test.sh 
 
 deploy:
   provider: script
