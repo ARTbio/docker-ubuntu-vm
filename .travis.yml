@@ -9,6 +9,9 @@ before_install:
 install:
   - bash ./build.sh
 
+script:
+  - bash ./test.sh 
+
 deploy:
   provider: script
   script: bash ./deploy.sh
